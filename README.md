@@ -6,8 +6,7 @@ Kill off any process in linux without having to manually find the PID.
 Installation
 ------------
 ```shell
-git clone git@github.com:mppatterson/k.git
-sudo cp k /usr/local/bin/
+wget https://raw.githubusercontent.com/mppatterson/k/master/k && sudo mv k /usr/local/bin/ && sudo chmod +x /usr/local/bin/k
 ```
 
 Usage
