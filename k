@@ -9,6 +9,6 @@ if [ -z "$str" ]; then
   exit
 fi
 str=${str%?}
-ps aux | grep "$str" | grep -v "bin/k " | sed "s/^[^ ]\+ \+//g" | sed "s/ .*//g" | xargs kill 2>/dev/null
+ps aux | grep "$str" | grep -v "bin/k " | sed "s/^[^ ]\+ \+//g" | sed "s/ .*//g" | xargs kill -9 2>/dev/null
 
 echo "killed any processes matching '$str'"
